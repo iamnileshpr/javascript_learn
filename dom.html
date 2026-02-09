@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 id="title">coding ki duniya</h1>
+    <p class="yt">Hii subscribe pls</p>
+    <p class="yt">Hii subscribe 2pls </p>
+    <button>Click me</button>
+
+    <script>
+        //selecting element
+        let h = document.getElementById('title')
+        let p = document.getElementsByClassName('yt')
+        let tag = document.getElementsByTagName(p)
+            /*  console.log(h);
+             console.log(tag);
+             console.log(p); */
+        let q = document.querySelector('#title')
+        let qa = document.querySelectorAll('.yt')
+            /* console.log(q);
+            console.log(qa); */
+
+        //changing element
+        h.innerText = 'naya text JS ne diya'
+        h.innerHTML = '<i>naya text JS ne diya</i>'
+
+        //changing style
+        h.style.color = 'red'
+        h.style.backgroundColor = 'black'
+
+        //event listner
+        let btn = document.querySelector('button')
+        let para = document.querySelector('p')
+        btn.addEventListener('click', function() {
+            console.log('button click hua');
+            para.innerHTML = 'click ke baad change hua'
+        })
+        console.log(btn);
+    </script>
+</body>
+
+</html>
